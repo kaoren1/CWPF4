@@ -1,0 +1,24 @@
+﻿<Window x:Class="PR4WPF1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR4WPF1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Пройти тест или редактировать тест?" VerticalAlignment="Center"></TextBlock>
+        <Button x:Name="LetsTest" Grid.Row="1" Content="Пройти тест" Click="LetsTest_Click"></Button>
+        <Button x:Name="Autorize" Grid.Row="2" Content="Редактировать тест" Click="Autorize_Click"></Button>
+        <TextBox x:Name="Pole" Grid.Row="3" Height="25"></TextBox>
+    </Grid>
+</Window>
